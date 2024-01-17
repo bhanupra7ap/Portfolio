@@ -12,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Ethical Hacker", "Back-End Designer", "Hacking Tools developer" ];
+  const toRotate = [ "Ethical Hacker", "Back-End Programmer", "Hacking Tools developer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome</span>
-                <h1>{`Hi! I'm Bhanu Pratap Singh    `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Ethical Hacker", "Back-End Developer", "Hacking Tools developer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Bhanu Pratap Singh    `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Ethical Hacker", "Back-End Programmer", "Hacking Tools developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I am an Electronics and Communication Engineering student, exploring the field of software, having hands-on experience in Python, Java, C, C++ and C#, Android app development  and iOS app development with Swift4. My forte is Cyber Security Red Team assessment and developing hacking tools.</p>
                   <button onClick={() => console.log('connect')}>Connect <ArrowRightCircle size={25} /></button>
               </div>}
